@@ -1,6 +1,22 @@
-# 🛡️ CyberShield ### Dashboard Demo 
+<div align="center">
+🛡️ CyberShield
+Recruitment & Workflow Dashboard Demo
 
-[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge\&logo=react\&logoColor=white)](https://react.dev/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)](https://fastapi.tiangolo.com/) [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://python.org/) *A professional full-stack demo showing candidate tracking, workflow dashboards, and data visualization tools.* [Live Demo](#-quick-start) • [Features](#-features) • [Tech Stack](#-tech-stack) • [API Documentation](#-api-endpoints) </div> ---
+
+
+
+
+
+
+
+A professional full-stack demo showing candidate tracking, workflow dashboards, and data visualization tools.
+
+Live Demo
+ • Features
+ • Tech Stack
+ • API Documentation
+
+</div>
 
 🎯 Project Overview
 
