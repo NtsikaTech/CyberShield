@@ -81,3 +81,93 @@ Instead, it demonstrates:
 ```bash
 npm install
 npm run dev
+````
+
+Runs at: **[http://localhost:3000](http://localhost:3000)**
+
+### Backend Setup
+
+```bash
+cd backend
+
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+API documentation available at: **[http://localhost:8000/docs](http://localhost:8000/docs)**
+
+---
+
+## 📡 API Endpoints (Demo)
+
+| Endpoint                     | Method | Auth | Description                  |
+| ---------------------------- | ------ | :--: | ---------------------------- |
+| `/api/v1/auth/login`         | POST   |   ❌  | Authenticate user (demo)     |
+| `/api/v1/auth/me`            | GET    |   ✅  | Get current user profile     |
+| `/api/v1/analyze/password`   | POST   |   ❌  | Password strength evaluation |
+| `/api/v1/analyze/logs`       | POST   |   ✅  | Log analysis demonstration   |
+| `/api/v1/analyze/logs/quick` | POST   |   ❌  | Rule-based log analysis      |
+
+---
+
+## 📁 Project Structure
+
+```text
+cybershield/
+├── App.tsx                  # Main application component
+├── index.tsx                # React entry point
+├── types.ts                 # Shared TypeScript types
+├── components/
+│   ├── Login.tsx            # Authentication UI
+│   ├── Dashboard.tsx        # Main dashboard layout
+│   ├── PasswordChecker.tsx  # Password evaluation tool
+│   └── LogAnalyzer.tsx      # Log analysis interface
+├── services/
+│   └── cyberService.ts      # API client layer
+└── backend/
+    ├── main.py              # FastAPI application
+    ├── auth.py              # Authentication logic
+    ├── config.py            # Configuration
+    ├── models.py            # Data schemas
+    └── services/
+        ├── password_analyzer.py
+        └── log_analyzer.py
+```
+
+---
+
+## 🔒 Security Demonstrations
+
+```python
+# Password hashing
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+# JWT token creation
+access_token = jwt.encode(
+    {"sub": username, "exp": expire},
+    SECRET_KEY,
+    algorithm="HS256"
+)
+```
+
+---
+
+## 🎨 UI Overview
+
+* Clean, modern cybersecurity dashboard layout
+* Responsive sidebar navigation
+* Status panels with visual severity indicators
+* Smooth transitions and structured component design
+
+---
+
+## 📄 License
+
+This project is provided **for portfolio and demonstration purposes only**.
+
+```
+
+****
