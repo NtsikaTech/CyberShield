@@ -1,155 +1,83 @@
 <div align="center">
 
-# 🛡️ CyberShield 
-### Dashboard Demo 
-[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge\&logo=react\&logoColor=white)](https://react.dev/) 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/) 
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)](https://fastapi.tiangolo.com/) 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://python.org/) 
+# 🛡️ CyberShield
+### Cybersecurity Dashboard Demo (Portfolio Project)
 
-*A professional full-stack demo showing candidate tracking, workflow dashboards, and data visualization tools.* 
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
 
-[Live Demo](#-quick-start) • [Features](#-features) • [Tech Stack](#-tech-stack) • [API Documentation](#-api-endpoints)
+*A professional full-stack cybersecurity dashboard demo built to showcase frontend, backend, and security-focused development skills to recruiters.*
+
+[Live Demo](#-quick-start) • [Features](#-features) • [Tech Stack](#-tech-stack) • [API Endpoints](#-api-endpoints)
 
 </div>
 
 ---
 
-🎯 Project Overview
+## 🎯 Project Overview
 
-CyberShield is a portfolio demonstration project designed specifically for technical recruiters and hiring managers.
-It showcases how a real-world cybersecurity dashboard could be architected, implemented, and presented using modern web technologies.
+CyberShield is a **portfolio demonstration project** created specifically for **technical recruiters and hiring managers**.  
+It showcases how a real-world cybersecurity dashboard can be architected, implemented, and presented using modern web technologies.
 
-This application is not intended for production use and does not manage recruitment processes. Instead, it demonstrates:
+This application is **not intended for production use** and **does not manage recruitment processes**.  
+Instead, it demonstrates:
 
-Secure authentication flows
+- Secure authentication flows  
+- Cybersecurity-oriented UI and dashboard patterns  
+- Log analysis and password evaluation concepts  
+- Clean frontend–backend integration  
 
-Cybersecurity-oriented UI patterns
+### Key Highlights
 
-Log analysis and password evaluation concepts
+- Modern React architecture using TypeScript and modular components  
+- Python FastAPI backend with structured, secure endpoints  
+- Cybersecurity-inspired dashboard design (monitoring, alerts, status panels)  
+- Core security fundamentals such as JWT authentication and password hashing  
 
-Clean frontend–backend integration
+---
 
-Key highlights:
+## ✨ Features
 
-Modern React architecture with TypeScript and modular components
+### 🔐 Secure Authentication Demo
+- JWT-based authentication flow  
+- Password hashing using industry-standard practices  
+- Role-based access simulation (Admin / Analyst)  
 
-Python FastAPI backend with secure, well-structured endpoints
+### 🔑 Password Evaluation Tool
+- Password complexity and strength checks  
+- Real-time feedback for weak or risky patterns  
+- Demonstrates security-aware form handling and validation  
 
-Cybersecurity-inspired dashboard design (monitoring, alerts, status panels)
+### 📊 Log & Activity Analysis Demo
+- Log input and analysis interface  
+- Visual severity indicators (normal / warning states)  
+- Historical scan panel to demonstrate persistent UI patterns  
+- Clickable history items that load detailed views  
 
-Security fundamentals such as JWT authentication and password hashing
+> All data is mock or simulated for demonstration purposes.
 
-✨ Features
-🔐 Secure Authentication Demo
+---
 
-JWT-based authentication flow
+## 🛠️ Tech Stack
 
-Password hashing using industry-standard practices
+| Layer | Technologies |
+|------|--------------|
+| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS, Lucide Icons |
+| **Backend** | Python 3.11+, FastAPI, Pydantic, Uvicorn |
+| **Security** | JWT authentication, bcrypt, CORS middleware |
+| **Dev Tools** | ESLint, TypeScript strict mode, hot reload |
 
-Role-based access simulation (Admin / Analyst)
+---
 
-🔑 Password Evaluation Tool
+## 🚀 Quick Start
 
-Password complexity and strength checks
+### Prerequisites
+- Node.js 18+  
+- Python 3.11+  
 
-Real-time feedback for weak or risky patterns
-
-Demonstrates security-aware form handling and validation
-
-📊 Log & Activity Analysis Demo
-
-Log input and analysis interface
-
-Visual severity indicators (normal / warning states)
-
-Historical scan panel to demonstrate persistent UI patterns
-
-Clickable history items that load detailed views
-
-All data is mock or simulated for demonstration purposes.
-
-🛠️ Tech Stack
-Layer	Technologies
-Frontend	React 19, TypeScript, Vite, Tailwind CSS, Lucide Icons
-Backend	Python 3.11+, FastAPI, Pydantic, Uvicorn
-Security	JWT authentication, bcrypt, CORS middleware
-Dev Tools	ESLint, TypeScript strict mode, hot reload
-🚀 Quick Start
-Prerequisites
-
-Node.js 18+
-
-Python 3.11+
-
-Frontend Setup
+### Frontend Setup
+```bash
 npm install
 npm run dev
-
-
-Runs at http://localhost:3000
-
-Backend Setup
-cd backend
-
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
-
-
-API docs available at http://localhost:8000/docs
-
-📡 API Endpoints (Demo)
-Endpoint	Method	Auth	Description
-/api/v1/auth/login	POST	❌	Authenticate user (demo)
-/api/v1/auth/me	GET	✅	Get current user profile
-/api/v1/analyze/password	POST	❌	Password strength evaluation
-/api/v1/analyze/logs	POST	✅	Log analysis demonstration
-/api/v1/analyze/logs/quick	POST	❌	Rule-based log analysis
-📁 Project Structure
-cybershield/
-├── App.tsx                  # Main application component
-├── index.tsx                # React entry point
-├── types.ts                 # Shared TypeScript types
-├── components/
-│   ├── Login.tsx            # Authentication UI
-│   ├── Dashboard.tsx        # Main dashboard layout
-│   ├── PasswordChecker.tsx  # Password evaluation tool
-│   └── LogAnalyzer.tsx      # Log analysis interface
-├── services/
-│   └── cyberService.ts      # API client layer
-└── backend/
-    ├── main.py              # FastAPI application
-    ├── auth.py              # Authentication logic
-    ├── config.py            # Configuration
-    ├── models.py            # Data schemas
-    └── services/
-        ├── password_analyzer.py
-        └── log_analyzer.py
-
-🔒 Security Demonstrations
-# Password hashing
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
-# JWT token creation
-access_token = jwt.encode(
-    {"sub": username, "exp": expire},
-    SECRET_KEY,
-    algorithm="HS256"
-)
-
-🎨 UI Overview
-
-Clean, modern cybersecurity dashboard layout
-
-Responsive sidebar navigation
-
-Status panels with visual severity indicators
-
-Smooth transitions and structured component design
-
-📄 License
-
-This project is provided for portfolio and demonstration purposes only.
