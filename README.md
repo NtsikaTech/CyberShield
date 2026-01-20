@@ -168,6 +168,3 @@ access_token = jwt.encode(
 
 This project is provided **for portfolio and demonstration purposes only**.
 
-```
-
-****
