@@ -1,9 +1,3 @@
-Got it! I’ve rewritten your README to make it **recruiter-friendly**, removed all mentions of Google AI Studio or Gemini, and simplified some cybersecurity jargon so it reads like a professional tool demo without overcomplicating things. Here’s the clean version:
-
----
-
-<div align="center">
-
 # 🛡️ CyberShield
 
 ### Recruitment & Workflow Dashboard Demo
