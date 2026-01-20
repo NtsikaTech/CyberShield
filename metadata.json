@@ -1,0 +1,8 @@
+
+{
+  "name": "CyberShield Frontend",
+  "description": "A modern, recruiter-friendly cybersecurity dashboard featuring a real-time password strength checker and an AI-powered system log analyzer.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
