@@ -8,9 +8,9 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
 
-*A security-focused password analysis demo built to showcase secure application design, entropy-based evaluation, and cybersecurity fundamentals to recruiters.*
+*A professional full-stack password security demo built to showcase secure application design and cybersecurity fundamentals to recruiters.*
 
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Security Focus](#-security-focus)
+[Quick Start](#-quick-start) • [Features](#-features) • [Tech Stack](#-tech-stack) • [API Endpoints](#-api-endpoints)
 
 </div>
 
@@ -21,16 +21,25 @@
 **CyberShield – Password Strength & Entropy Analyzer** is a **portfolio demonstration project** created specifically for **technical recruiters and hiring managers**.  
 It showcases how a **security-focused password analysis tool** can be architected, implemented, and presented using **modern web technologies** and cybersecurity best practices.
 
-This application is **not intended for production use** and **does not store or manage real user credentials**.  
-All password input is processed transiently for analysis only.
+This application is **not intended for production use** and **does not store real user passwords**.  
+All password input is handled securely and transiently for demonstration purposes only.
 
 The project demonstrates:
 
-- Secure authentication flows for protected analysis features  
+- Secure authentication flows for protected features  
 - Password strength evaluation using **entropy-based calculations**  
-- Detection of weak, predictable, or high-risk password patterns  
-- Security-aware frontend–backend communication  
-- Clear, explainable security logic suitable for review and audit  
+- Detection of weak, predictable, or risky password patterns  
+- Security-aware frontend–backend integration  
+- Clear, explainable security logic suitable for review and discussion  
+
+---
+
+### Key Highlights
+
+- Modern **React architecture** using **TypeScript** and modular components  
+- **Python FastAPI backend** with structured, security-aware endpoints  
+- Password analysis based on **length, complexity, character diversity, and entropy**  
+- Core security fundamentals such as **cryptographic hashing**, **JWT authentication**, and **secure input handling**
 
 ---
 
@@ -42,56 +51,45 @@ The project demonstrates:
 - Role-based access simulation (Admin / Analyst)  
 
 ### 🔑 Password Strength & Entropy Analyzer
-- Password complexity checks (length, character diversity, predictability)  
+- Password complexity checks (length, symbols, character classes)  
 - Entropy calculation to estimate resistance against brute-force attacks  
-- Real-time feedback for weak or risky password patterns  
-- Visual strength indicators (weak / moderate / strong)  
-- Secure handling of sensitive input without persistence  
+- Real-time feedback for weak or high-risk password patterns  
+- Visual indicators to clearly explain password strength  
+- No password persistence or storage  
 
-### 📊 Analysis History (Demo)
-- Simulated analysis history panel to demonstrate persistent UI patterns  
-- Clickable history items that load detailed analysis views  
-- Emphasis on explainability rather than data retention  
+### 📊 Analysis History (Demonstration)
+- Simulated history panel to demonstrate persistent UI patterns  
+- Clickable entries that load detailed analysis views  
+- Emphasis on **explainability**, not data retention  
 
-> All passwords and analysis data are **mock or transient** and used strictly for demonstration purposes.
-
----
-
-## 🔒 Security Focus
-
-- Cryptographic hashing for password protection  
-- Entropy-based password strength evaluation  
-- Secure API communication and input validation  
-- Clear separation between frontend presentation and backend logic  
+> All data used in this project is mock or transient and exists solely for demonstration.
 
 ---
 
 ## 🛠️ Tech Stack
 
 | Layer | Technologies |
-|------|--------------|
-| **Frontend** | React, TypeScript, Vite, Tailwind CSS |
-| **Backend** | Python 3.11+, FastAPI, Pydantic |
-| **Security** | JWT authentication, bcrypt |
-| **Dev Tools** | ESLint, TypeScript strict mode |
+|------|-------------|
+| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS |
+| **Backend** | Python 3.11+, FastAPI, Pydantic, Uvicorn |
+| **Security** | JWT authentication, bcrypt, CORS middleware |
+| **Dev Tools** | ESLint, TypeScript strict mode, hot reload |
 
 ---
 
-## 🧠 Project Intent
+## 🚀 Quick Start
 
-CyberShield is designed to help reviewers understand:
-
-- How password security can be evaluated beyond basic rules  
-- How entropy is used to assess password strength  
-- How sensitive user input should be handled securely  
-- How cybersecurity concepts translate into user-facing feedback  
+### Prerequisites
+- **Node.js 18+**
+- **Python 3.11+**
 
 ---
 
-### 📌 One-line Summary
+### 🔹 Frontend Setup
 
-> **A password security demonstration application that evaluates password strength using entropy-based analysis and secure application design principles.**
-
+```bash
+npm install
+npm run dev
 
 ## 📄 License
 
