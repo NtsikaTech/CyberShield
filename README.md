@@ -91,6 +91,9 @@ The project demonstrates:
 npm install
 npm run dev
 
+cd backend
+npm run dev
+
 ## 📄 License
 
 This project is provided **for portfolio and demonstration purposes only**.
