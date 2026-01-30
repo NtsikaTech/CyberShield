@@ -10,7 +10,7 @@
 
 *A professional full-stack password security demo built to showcase secure application design and cybersecurity fundamentals to recruiters.*
 
-[Quick Start](#-quick-start) • [Features](#-features) • [Tech Stack](#-tech-stack) • [API Endpoints](#-api-endpoints)
+[Quick Start](#-quick-start) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Security Context](#-security-context)
 
 </div>
 
@@ -28,9 +28,9 @@ The project demonstrates:
 
 - Secure authentication flows for protected features  
 - Password strength evaluation using **entropy-based calculations**  
-- Detection of weak, predictable, or risky password patterns  
+- Detection of weak, predictable, or high-risk password patterns  
 - Security-aware frontend–backend integration  
-- Clear, explainable security logic suitable for review and discussion  
+- Clear, explainable security logic suitable for SOC and blue-team discussions  
 
 ---
 
@@ -66,6 +66,54 @@ The project demonstrates:
 
 ---
 
+## 🛡️ Security Context
+
+### 🔍 What threat does this detect?
+This project detects **weak authentication practices**, specifically:
+- Low-entropy passwords  
+- Predictable password patterns  
+- Passwords vulnerable to brute-force or credential-stuffing attacks  
+
+Weak passwords are a common **initial access vector** in real-world security incidents.
+
+---
+
+### 🎯 What attack would this catch?
+The analyzer helps identify credentials vulnerable to:
+- **Brute-force attacks**
+- **Credential stuffing**
+- **Password spraying**
+- **Dictionary-based attacks**
+
+While this tool does not actively block attacks, it demonstrates **preventive detection** by identifying high-risk passwords before they are deployed.
+
+---
+
+### 🧠 MITRE ATT&CK Mapping
+This project aligns with the following MITRE ATT&CK techniques:
+
+- **T1110 – Brute Force**
+- **T1110.001 – Password Guessing**
+- **T1110.003 – Password Spraying**
+- **T1555 – Credentials from Password Stores** (preventive awareness)
+
+The analyzer supports **early-stage defense** by reducing credential exposure risk.
+
+---
+
+### 🖥️ How would this be used in a SOC?
+In a Security Operations Center (SOC) context, this system would be used to:
+
+- Support **secure application onboarding reviews**
+- Assist during **identity and access management (IAM) audits**
+- Provide **developer security feedback** during SDLC reviews  
+- Educate users and teams on password hygiene and entropy concepts  
+- Complement SIEM alerts related to repeated authentication failures  
+
+This project demonstrates how **application-layer security controls** contribute to a broader **defense-in-depth strategy**.
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Technologies |
@@ -90,11 +138,20 @@ The project demonstrates:
 ```bash
 npm install
 npm run dev
+````
 
+### 🔹 Backend Setup
+
+```bash
 cd backend
+npm install
 npm run dev
+```
+
+---
 
 ## 📄 License
 
 This project is provided **for portfolio and demonstration purposes only**.
+
 
