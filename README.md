@@ -89,18 +89,6 @@ While this tool does not actively block attacks, it demonstrates **preventive de
 
 ---
 
-### 🧠 MITRE ATT&CK Mapping
-This project aligns with the following MITRE ATT&CK techniques:
-
-- **T1110 – Brute Force**
-- **T1110.001 – Password Guessing**
-- **T1110.003 – Password Spraying**
-- **T1555 – Credentials from Password Stores** (preventive awareness)
-
-The analyzer supports **early-stage defense** by reducing credential exposure risk.
-
----
-
 ### 🖥️ How would this be used in a SOC?
 In a Security Operations Center (SOC) context, this system would be used to:
 
